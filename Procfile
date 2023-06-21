@@ -1,2 +1,2 @@
-web: yarn network -- --host 0.0.0.0 --port $PORT
+web: yarn network --hostname 0.0.0.0 --port $PORT
 
