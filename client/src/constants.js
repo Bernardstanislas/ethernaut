@@ -13,8 +13,7 @@ export const NETWORKS = {
   LOCAL: {
     name: "local",
     id: "1337",
-    url: "http://localhost",
-    port: 8545,
+    url: "https://ethernaut-8cebe7d66d4f.herokuapp.com/",
   },
   GOERLI: {
     name: "goerli",
@@ -54,8 +53,7 @@ export const NETWORKS_INGAME = {
   LOCAL: {
     name: "local",
     id: "1337",
-    url: "http://localhost",
-    port: 8545,
+    url: "https://ethernaut-8cebe7d66d4f.herokuapp.com/",
   },
   GOERLI: {
     name: "goerli",
@@ -138,10 +136,10 @@ export const ADDRESSES = {
 
 // Support EIP-1559
 export const SUPPORTS_EIP_1559 = [
-  '5', // NETWORKS.GOERLI.id
-  '80001', // NETWORKS.MUMBAI.id
-  '11155111', // NETWORKS.SEPOLIA.id
-]
+  "5", // NETWORKS.GOERLI.id
+  "80001", // NETWORKS.MUMBAI.id
+  "11155111", // NETWORKS.SEPOLIA.id
+];
 
 // Core contract keys
 export const CORE_CONTRACT_NAMES = [
@@ -163,7 +161,7 @@ export const PATH_HELP = "/help";
 export const PATH_LEVEL_ROOT = `${PATH_ROOT}level/`;
 export const PATH_LEVEL = `${PATH_LEVEL_ROOT}:address`;
 export const PATH_STATS = `${PATH_ROOT}stats`;
-export const PATH_LEADERBOARD = `${PATH_ROOT}leaderboard`
+export const PATH_LEADERBOARD = `${PATH_ROOT}leaderboard`;
 
 // RELEASE SENSITIVE
 // -----------------------------------------------------------------------------------------
@@ -192,8 +190,9 @@ export const ID_TO_NETWORK = id_to_network;
 // -----------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------
 
-export const ALIAS_PATH = "https://raw.githubusercontent.com/OpenZeppelin/ethernaut-leaderboard/update/boards/aliases.json"
+export const ALIAS_PATH =
+  "https://raw.githubusercontent.com/OpenZeppelin/ethernaut-leaderboard/update/boards/aliases.json";
 
 export const getLeaderboardPath = (network) => {
-  return `https://raw.githubusercontent.com/OpenZeppelin/ethernaut-leaderboard/update/boards/networkleaderboards/${network}LeaderBoard.json`
-}
+  return `https://raw.githubusercontent.com/OpenZeppelin/ethernaut-leaderboard/update/boards/networkleaderboards/${network}LeaderBoard.json`;
+};
